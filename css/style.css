@@ -5,10 +5,13 @@
   --color-2: Red;
   --color-3: Green;
   --color-4: Yellow;
+  --color-dark-mode: #222;
+  --color-light-mode: #ddd;
   --column-width: 200px;
   --column-gap: 20px;
   --container-padding: 20px;
-  --font-color: #fff;
+  --font-color-dark: #fff;
+  --font-color-light: #000;
 }
 
 body {
@@ -23,12 +26,10 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  /* width: 100%; */
-  padding: var(--container-padding);
   gap: var(--column-gap);
-  width: var(--column-width);
 }
 
+/* Assignment 1 specific code */
 .primary{
   color: var(--color-primary);
 }
@@ -36,23 +37,55 @@ body {
 .secondary{
   color: var(--color-secondary);
 }
+/* Assignment 1 specific code */
 
-.column-1{
-  column-width: var(--column-width);
-}
-
+/* Assignment 2 specific code */
 .color-1{
   background-color: var(--color-1);
+  width: var(--column-width);
+  padding: var(--container-padding);
+  color: var(--font-color-dark);
 }
 
 .color-2{
   background-color: var(--color-2);
+  width: var(--column-width);
+  padding: var(--container-padding);
+  color: var(--font-color-dark);
 }
 
 .color-3{
   background-color: var(--color-3);
+  width: var(--column-width);
+  padding: var(--container-padding);
+  color: var(--font-color-dark);
 }
 
 .color-4{
   background-color: var(--color-4);
+  width: var(--column-width);
+  padding: var(--container-padding);
+  color: var(--font-color-dark);
 }
+/* Assignment 2 specific code */
+
+/* Assignment 3 specific code */
+
+.container-mode{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.light-mode{
+  background-color: var(--color-light-mode);
+  color: var(--font-color-light);
+}
+
+.dark-mode{
+  background-color: var(--color-dark-mode);
+  color: var(--font-color-dark);
+}
+
+/* Assignment 3 specific code */
