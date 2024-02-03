@@ -5,8 +5,12 @@
   --color-2: Red;
   --color-3: Green;
   --color-4: Yellow;
-  --color-dark-mode: #222;
-  --color-light-mode: #ddd;
+  --white0: #f8f8f8;
+  --white1: #dbe1e8;
+  --white2: #b2becd;
+  --dark0: #454e56;
+  --dark1: #2a2e35;
+  --dark2: #12181b;
   --column-width: 200px;
   --column-gap: 20px;
   --container-padding: 20px;
@@ -20,6 +24,9 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  color: var(--text);
+  background: var(--bg);
+  transition: background 500ms ease-in-out, color 1000ms ease-in-out;
 }
 
 .container{
@@ -78,14 +85,14 @@ body {
   flex-direction: column;
 }
 
-.light-mode{
-  background-color: var(--color-light-mode);
-  color: var(--font-color-light);
+.light{
+  --bg: var(--white0);
+  --text: var(--font-color-light)
 }
 
-.dark-mode{
-  background-color: var(--color-dark-mode);
-  color: var(--font-color-dark);
+.dark{
+  --bg: var(--dark1);
+  --text: var(--font-color-dark)
 }
 
 /* Assignment 3 specific code */
