@@ -7,6 +7,8 @@ const darkMode = () => {
   body.classList.toggle('dark');
 }
 
+// @media (prefers-color-
+
 document.getElementById('themeToggle').onclick = darkMode;
 
 

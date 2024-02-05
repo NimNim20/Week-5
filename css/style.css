@@ -104,6 +104,20 @@ body {
   --text: var(--font-color-dark)
 }
 
+@media (prefers-color-scheme: dark){
+  body{
+    --bg: var(--dark1);
+    --text: var(--font-color-dark)
+  }
+}
+
+@media (prefers-color-scheme: light){
+  body{
+    --bg: var(--white0);
+    --text: var(--font-color-light);
+  }
+}
+
 /* Assignment 3 specific code */
 
 /* Assignment 4 specific code */
